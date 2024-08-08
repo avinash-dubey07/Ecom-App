@@ -30,10 +30,10 @@ const HeaderMain = () => {
       </nav>
       <div className="flex mr-[250px] space-x-4 items-center cursor-pointer">
         <CiSearch className="w-16 h-9 hover:bg-gray-200 p-1 rounded-full" />
-        <MdOutlineAccountCircle className="w-16 h-9 hover:bg-gray-200 p-1 rounded-full" />
+        <MdOutlineAccountCircle className="w-16 h-9 text-gray-500 hover:bg-gray-200 p-1 rounded-full" />
         <div className="relative">
           <PiShoppingCartThin className="w-16 h-9 hover:bg-gray-200 p-1 rounded-full" />
-          <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-normal leading-none text-red-50 bg-red-600 rounded-full">3</span>
+          <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-normal leading-none text-red-50 bg-cyan-500 rounded-full">3</span>
         </div>
       </div>
     </header>

@@ -1,14 +1,25 @@
+"use client";
 import React from "react";
 import { RxModulzLogo } from "react-icons/rx";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { RiAccountPinBoxFill } from "react-icons/ri";
 
 const Footer = () => {
 
+  const routeLinkedIn = () => {
+    const linkedInUrl = `https://www.linkedin.com/in/avinash-dubey-125b66207`;
+    window.open(linkedInUrl, "_blank");
+  };
+
   const routeGithub = () => {
-    const githubUrl = ``;
+    const githubUrl = `https://github.com/avinash-dubey07/Ecom-App.git`;
     window.open(githubUrl, "_blank");
+  };
+
+  const routePortfolio = () => {
+    const portfolioUrl = ` https://my-portfolio-bab16.web.app`;
+    window.open(portfolioUrl, "_blank");
   };
 
   return (
@@ -23,15 +34,15 @@ const Footer = () => {
             </div>
             <div className="flex space-x-2 mt-5">
               <FaLinkedin className="w-6 h-6 bg-white text-blue-500" />
-              <button className="font-normal text-gray-700">LinkedIn</button>
+              <button onClick={routeLinkedIn} className="font-normal text-gray-700">LinkedIn</button>
             </div>
             <div className="flex space-x-2 mt-2">
               <FaGithub className="w-6 h-6" />
-              <button className="font-normal text-gray-700">Github</button>
+              <button onClick={routeGithub} className="font-normal text-gray-700">Github</button>
             </div>
             <div className="flex space-x-2 mt-2">
-              <FaSquareXTwitter className="w-6 h-6" />
-              <button className="font-normal text-gray-700">Twitter</button>
+              <RiAccountPinBoxFill className="w-6 h-6 text-green-600" />
+              <button onClick={routePortfolio} className="font-normal text-gray-700">My Portfolio</button>
             </div>
           </div>
           <div className="flex items-center">

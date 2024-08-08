@@ -115,7 +115,7 @@ const HomePage = () => {
         </div>
       </div>
       <div>
-        {/* <div className="flex justify-between ml-[290px] -mt-16">
+        <div className="flex justify-between ml-[290px] -mt-16">
           <div>
             <h2 className="font-extrabold text-blue-600 text-4xl">
               Discover more. Good things are waiting for you
@@ -131,7 +131,7 @@ const HomePage = () => {
               <GoArrowRight />{" "}
             </button>
           </div>
-        </div> */}
+        </div>
         <div>
 
         </div>
